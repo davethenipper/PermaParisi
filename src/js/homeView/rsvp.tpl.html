@@ -1,0 +1,112 @@
+
+<div class=rsvp>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7zWucO0P3Beyk3vZouvDtQZq8vsp27dohnJL8glSLpNSznw/viewform?embedded=true" height="100%" width="100%" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" overflow="visible" >Loading...</iframe>
+</div>
+
+<!---div class="add-header">
+  <md-toolbar class="md-accent" layout="row" layout-align="center center">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">Add an Activity</h2>
+    </div>
+  </md-toolbar>
+  <md-content flex layout-padding>
+</div>
+<div class="actForm" ng-if="actForm.type">
+  <i class="material-icons icon-btn">{{actForm.type.icon}}</i>
+  Idk wtf is going on here.  It won't let me select icon :(
+</div>
+<div class="activity-form">
+  <div class="container">
+    <form name="actForm" novalidate role="form" ng-submit="checkErrors()">
+      <div layout="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label> Activity Name </label>
+          <input required ng-model="activity.name" name="name">
+          <div ng-messages="actForm.name.$error">
+            <div ng-message="required" class="error-message">
+              This is required.
+            </div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label> Type </label>
+          <md-select required ng-model="activity.type">
+            <md-option ng-repeat="type in types" value={{type.name}}>
+              {{type.name}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Summary</label>
+        <input required ng-model="activity.summary" name="summary">
+        <div ng-messages="actForm.summary.$error">
+          <div ng-message="required" class="error-message">
+            This is required.
+          </div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Description</label>
+        <textarea ng-model="activity.description"
+                  name="description"
+                  columns="1"
+                  ng-minlength="15"
+                  ng-maxlength="1000"
+                  md-maxlength="1000"></textarea>
+      </md-input-container>
+      Location:
+      <div layout="row" class="indent">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Latitude</label>
+          <input required ng-model="activity.latitude" name="time">
+          <div ng-messages="actForm.latitude.$error">
+            <div ng-message="required" class="error-message">
+              This is required.
+            </div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Longitude</label>
+          <input required ng-model="activity.longitude" name="time">
+          <div ng-messages="actForm.longitude.$error">
+            <div ng-message="required" class="error-message">
+              This is required.
+            </div>
+          </div>
+        </md-input-container>
+      </div>
+      Time to Complete:
+      <div layout="row" class="indent">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Min Time</label>
+          <input ng-model="activity.mintime" name="time">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Max Time</label>
+          <input ng-model="activity.maxtime" name="time">
+        </md-input-container>
+      </div>
+      Image URL:
+      <div class="indent">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Image Link</label>
+          <input ng-model="activity.imgUrl" name="time">
+        </md-input-container>
+      </div>
+      <div class="center-text">
+        <span>
+          <md-button class="md-primary md-raised center-button" type="submit">
+            Submit
+          </md-button>
+          <md-button class="md-primary md-raised center-button" ng-click="navigate('userHome')">
+            Cancel
+          </md-button>
+        </span>
+      </div>
+      <div class="error-text center-text" ng-repeat="error in errorMessage" ng-if="errorMessage">
+        {{error}}
+      </div>
+    </form>
+  </div>
+</div>

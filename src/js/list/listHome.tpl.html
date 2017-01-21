@@ -1,0 +1,28 @@
+<div>
+  <h2 class="new-header accent"> List Navigator </h2>
+</div>
+<div class="container">
+  <md-button aria-label="list name" class="md-button md-raised md-primary list-name" >
+    All Activities
+    <i class="material-icons icon-btn-adjust right">keyboard_arrow_down</i>
+  </md-button>
+  <md-content>
+    <md-list class="list-items">
+      <md-list-item class="md-3-line" ng-repeat="item in activities">
+        <div class="md-list-item-text" layout="row">
+          <md-button class="md-fab md-mini" aria-label="activity">
+            <img ng-src={{item.Images}} class="pic-icon"/>
+          </md-button>
+          <div>
+            <h3>{{item.Name}}</h3>
+            <p>{{item.Summary}}</p>
+          </div>
+        </div>
+        <md-button class="md-secondary md-fab-icon">
+          <i class="material-icons icon-btn-adjust">add</i>
+        </md-button>
+        <md-divider ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-content>
+</div>

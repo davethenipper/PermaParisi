@@ -1,0 +1,15 @@
+<md-card class="card">
+  <img ng-src={{activity.Images}} class="md-card-image card-img" alt="Washed Out" ng-if="activity.Images != None"/>
+  <md-card-title class="card-headline">
+    <md-card-title-text>
+      <span class="headline">{{activity.Name}}</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content layout="column" class="card-text">
+    <p ng-if=activity.Description>
+      {{activity.Description | limitTo: 150}}...
+    </p>
+  </md-card-content>
+  <!-- <md-card-actions layout="row" layout-align="end center">
+  </md-card-actions> -->
+</md-card>

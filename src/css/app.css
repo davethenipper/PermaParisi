@@ -1,0 +1,361 @@
+.button {
+  /*color: #FFFFFF;*/
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+.list-name {
+  width: 90vw;
+}
+.list-items {
+  width: 85vw;
+  margin-left: 30px;
+}
+.padding-left-20 {
+  padding-left:20px;
+}
+.center {
+  margin: auto;
+}
+.login-load {
+  margin-top: 50px;
+}
+.options {
+  margin: 20px;
+}
+.shift-link {
+  bottom: 19px;
+}
+.buffer {
+  padding-right: 20px;
+}
+.new-header {
+  color: #FFFFFF;
+  background-color: #3F51B5;
+  margin: 0px;
+  padding: 10px;
+}
+.act-header {
+  height: 75px;
+  background-color: #009688;
+  padding: 1px 20px;
+}
+.accent {
+  background-color: #009688;
+}
+.list-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.act-img {
+  width: 200px;
+  padding: 10px;
+}
+.act-img-format {
+  margin: auto;
+}
+.act-card {
+  margin: 20px;
+}
+.act-desc {
+  padding: 20px;
+}
+.act-actions{
+  padding: 10px 0px 0px 10px;
+  height: 60px;
+}
+.headline {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  overflow: hidden;
+}
+.card-headline {
+  padding-top: 10px;
+}
+.white-text {
+  color: white;
+}
+.show-act .container {
+  padding-left: 20px;
+}
+.container {
+  padding: 20px;
+}
+.usericon {
+  color: black;
+}
+.edit-controls {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.activity-form .container {
+  padding: 20px;
+}
+.indent {
+  padding-left: 20px;
+}
+.wait {
+  margin: auto;
+}
+.separator {
+  height: 30px;
+  background-color: #3F51B5;
+  z-index: 0;
+  padding-top: 10px;
+}
+.userHome .container {
+  padding: 10px;
+  background-color: #EAEAEA;
+  height: 325px;
+}
+/*.userHome {
+  background-color: #EAEAEA;
+}*/
+.pic-icon {
+  width: 45px;
+  height: 45px;
+  margin-left: -6px;
+}
+.profile-pic {
+  height: 200px;
+  padding: 5px;
+  margin: 20px;
+  border-width: 1px;
+  border-color: #aaaaaa;
+  border-style: solid;
+}
+.profile-name {
+  /*padding-top: 50px;*/
+  font-size: 24px;
+}
+.animate-if {
+  background:white;
+}
+
+.animate-if.ng-enter {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter {
+  opacity:0;
+}
+
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.profile-data {
+  padding-left: 20px;
+  padding-top: 50px;
+}
+.profile {
+  display: inline-block;
+}
+.edit {
+  opacity: 0.25;
+  text-align: right;
+}
+.tabs {
+  clear: both;
+}
+.new-activities {
+  padding-top: 5px;
+  height: 400px;
+  background-color: #EAEAEA;
+}
+.card-img {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+}
+.card {
+  width: 200px;
+  height: 270px;
+  color: black;
+}
+.card-text {
+  font-size: 14px;
+}
+.new-activities .container {
+  padding: 20px;
+}
+.icon-btn-adjust {
+  vertical-align: middle;
+}
+.icon-menu {
+  padding-right: 10px;
+}
+.sign-up-window {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+.sign-up-btn {
+  background: black;
+  width: 100px;
+}
+.center-text {
+  text-align: center;
+}
+.error-text {
+  color: rgb(221,44,0);
+  margin-top: 5px;
+}
+.header {
+  /*height: 600px;*/
+  height: 90vh;
+  background-color: #EAEAEA;
+  background: url("image5.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header .container {
+  text-align: center;
+  padding-top: 100px;
+  /*font-size: 40px;*/
+  font-size: 4vw;
+  color: white;
+  height: 65vh;
+}
+.midder {
+    /*height: 600px;*/
+    height: 90vh;
+    background-color: #EAEAEA;
+    background: url("Hillbrook.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.footer {
+  /*height: 600px;*/
+  height: 90vh;
+  background-color: #EAEAEA;
+  background: url("image1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.footer .container {
+  text-align: center;
+  padding-top: 100px;
+  /*font-size: 40px;*/
+  font-family: 'Great Vibes';
+  font-size: 2vw;
+  color: white;
+  height: 65vh;
+}
+.rsvp {
+  /*height: 600px;*/
+  height: 180vh;
+  background-color: #EAEAEA;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.shower {
+  /*height: 600px;*/
+  height: 180vh;
+  background-color: #EAEAEA;
+  background: url("image1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.shower .container {
+  text-align: center;
+  padding-top: 100px;
+  /*font-size: 40px;*/
+  font-size: 4vw;
+  color: white;
+  height: 65vh;
+}
+.expand {
+  color: white;
+  opacity: 0.5;
+  font-size: 36px;
+}
+.main-add {
+  font-size: 36px;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+.icon-btn {
+  margin-top: 7px;
+}
+.main-icon {
+  background-color: #EAEAEA;
+}
+
+.fabSpeedDial .md-fab:hover, .fabSpeedDial .md-fab.md-focused {
+  background-color: rgb(163, 163, 163) !important;
+  /*color: white !important;*/
+}
+.fabSpeedDial .lock-size {
+  min-width: 100px;
+  min-height: 400px;
+  width: 150px;
+  height: 300px;
+  z-index: 10;
+}
+.actions {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.more-content {
+  height: 400px;
+}
+.tagline {
+  /*color: rgb(75, 126, 229);*/
+  color: white;
+}
+.menu {
+  min-width: 100px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.md-button.md-icon-button-rsvp {
+  margin: 0 6px;
+  height: 40px;
+  min-width: 0;
+  line-height: 24px;
+  padding: 8px;
+  width: 45px;
+  border-radius: 50%; }
+  .md-button.md-icon-button-reg {
+    margin: 0 6px;
+    height: 40px;
+    min-width: 0;
+    line-height: 24px;
+    padding: 8px;
+    width: 75px;
+    border-radius: 50%; }
+    .md-button.md-icon-button-shower {
+      margin: 0 6px;
+      height: 40px;
+      min-width: 0;
+      line-height: 24px;
+      padding: 8px;
+      width: 120px;
+      border-radius: 50%; }

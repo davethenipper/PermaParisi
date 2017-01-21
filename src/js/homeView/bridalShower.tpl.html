@@ -1,0 +1,103 @@
+
+<div class="shower">
+  <div class="container">
+    <h2 class="tagline">The Bridal Shower</h2>
+  </div>
+</div>
+
+<!--div ng-cloak>
+  <div layout="row">
+    <div class="profile">
+      <img ng-src="{{user.Picture}}" class="profile-pic" ng-if="user.Picture"/>
+    </div>
+    <div layout="column" class="profile-data animate-if">
+      <div ng-if="!editUser" class="animate-if">
+        <div class="profile-name">
+          {{user.Username}}
+          <span>
+            <i class="material-icons icon-btn-adjust edit" ng-click="edit('user')">
+              mode_edit
+            </i>
+          </span>
+        </div>
+        <br>
+        <div ng-if="user.FirstName">
+          {{user.FirstName}}
+          <span ng-if="user.LastName">
+            {{user.LastName}}
+          </span>
+        </div>
+        <div ng-if="user.Email"> {{user.Email}} </div>
+        <br>
+        <div ng-if="user.Profile">
+          <strong>About Me:</strong>
+          <div>
+            {{user.Profile}}
+          </div>
+        </div>
+      </div>
+      <div ng-if="editUser" class="md-inline-form animate-if">
+        <form name="userEdit" novalidate role="form" ng-submit="editSubmit(user)">
+          <div layout="row">
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>First Name</label>
+              <input ng-model="user.FirstName" name="firstname">
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>Last Name</label>
+              <input ng-model="user.LastName" name="lastname">
+            </md-input-container>
+          </div>
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Bio</label>
+            <textarea ng-model="user.Profile" md-maxlength="150" rows="5" md-select-on-focus>
+            </textarea>
+          </md-input-container>
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Zip</label>
+            <input ng-model="user.Zip" name="zip">
+          </md-input-container>
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Picture URL</label>
+            <input ng-model="user.Picture" name="pic">
+          </md-input-container>
+          <div class="edit-controls">
+            <md-button class="md-accent md-fab center-button md-mini" type="submit">
+              <i class="material-icons icon-btn-adjust">check</i>
+            </md-button>
+            <md-button class="md-warn md-fab center-button md-mini" type="button" ng-click="cancel()">
+              <i class="material-icons icon-btn-adjust">clear</i>
+            </md-button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="tabs">
+  <div>
+    <md-content>
+      <md-tabs md-dynamic-height md-border-bottom>
+        <md-tab label="Priority List">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Tab One</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+          </md-content>
+        </md-tab>
+        <md-tab label="Recent Activities">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Tab One</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+          </md-content>
+        </md-tab>
+        <md-tab label="Most-Liked Activities">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Tab One</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+  </div>
+</div> -->

@@ -1,0 +1,64 @@
+<div >
+    Registry Page
+</div>
+
+<!---div>
+  <h2 class="new-header md-theme-light"> {{activity.Name}} </h2>
+</div>
+<div class="show-act" ng-if="loaded">
+  <div ng-if="!editMode">
+    <div layout="column" layout-gt-xs="row">
+      <div layout="column">
+        <div class="act-actions">
+          <md-button class="md-fab md-mini md-primary">
+            <i class="material-icons icon-btn-adjust white-text">add</i>
+            <md-tooltip> Add to List </md-tooltip>
+          </md-button>
+          <md-button class="md-fab md-mini md-primary"
+                     ui-sref="editAct({ actName: activity.Name })">
+            <i class="material-icons icon-btn-adjust white-text">edit</i>
+            <md-tooltip> Edit Activity </md-tooltip>
+          </md-button>
+          <md-button class="md-fab md-mini md-primary">
+            <i class="material-icons icon-btn-adjust white-text">delete</i>
+            <md-tooltip> Remove From List </md-tooltip>
+          </md-button>
+        </div>
+        <md-divider></md-divider>
+        <div class="act-desc">
+          <i class="material-icons icon-btn-adjust">
+            {{activity.Type.icon}}
+          </i>
+          <p> {{activity.Summary}} </p>
+          <p>
+            <b>Expected Time to Complete: </b>
+            <span>{{activity.TimeToComplete}}</span>
+          </p>
+        </div>
+      </div>
+      <div layout="row" class="act-img-format">
+        <md-card class="act-card" ng-if=activity.Images>
+          <img ng-src={{activity.Images}} class="act-img"/>
+        </md-card>
+      </div>
+    </div>
+    <md-divider></md-divider>
+  </div>
+  <div class="container">
+    <h3>Description: </h3>
+    <p> {{activity.Description}}</p>
+  </div>
+  <div class="container" ng-if="editMode">
+    <div layout="column">
+      <div class="act-actions">
+        <md-button class="md-fab md-mini md-primary" ng-click=submitEdit()>
+          <i class="material-icons icon-btn-adjust white-text">check</i>
+          <md-tooltip> Submit Changes </md-tooltip>
+        </md-button>
+        <md-button class="md-fab md-mini md-primary" ng-click=cancelEdit()>
+          <i class="material-icons icon-btn-adjust white-text">clear</i>
+          <md-tooltip> Cancel Changes </md-tooltip>
+        </md-button>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="userHome">
+  <div class="options" layout="column">
+    <div layout="row" class="center">
+      <md-button class="md-raised md-accent button" ng-click=navigate('addAct')
+        aria-label="add activity">
+        <i class="material-icons icon-btn-adjust usericon">add</i>
+        <md-tooltip md-direction="left"> Add Activity </md-tooltip>
+      </md-button>
+      <md-button class="md-raised md-accent button"
+        ng-click=navigate('listHome') aria-label="list home">
+        <i class="material-icons icon-btn-adjust usericon">storage</i>
+        <md-tooltip md-direction="right"> Add List </md-tooltip>
+      </md-button>
+    </div>
+    <div layout="row" class="center">
+      <md-button class="md-raised md-accent button" ng-click=navigate('addAct')>
+        <i class="material-icons icon-btn-adjust usericon">search</i>
+        <md-tooltip md-direction="left"> Find Activity </md-tooltip>
+      </md-button>
+      <md-button class="md-raised md-accent button">
+        <i class="material-icons icon-btn-adjust usericon"></i>
+      </md-button>
+    </div>
+  </div>
+  <div>
+    <h2 class="new-header">Try something...</h2>
+  </div>
+  <div class="container">
+    <div layout="row" layout-align="center">
+      <div ng-repeat="act in activities | orderBy: '-Name' | limitTo: 1 "
+           ui-sref="showAct({ actName: act.Name })"
+           hide show-xs=>
+        <opt-card activity="act"> </opt-card>
+      </div>
+      <div ng-repeat="act in activities | orderBy: '-Name' | limitTo: 2"
+           ui-sref="showAct({ actName: act.Name })"
+           hide show-sm=>
+        <opt-card activity="act"> </opt-card>
+      </div>
+      <div ng-repeat="act in activities | orderBy: '-Name' | limitTo: 4 "
+           ui-sref="showAct({ actName: act.Name })"
+           hide show-md=>
+        <opt-card activity="act"> </opt-card>
+      </div>
+      <div ng-repeat="act in activities | orderBy: '-Name' | limitTo: 5 "
+           ui-sref="showAct({ actName: act.Name })"
+           hide show-lg=>
+        <opt-card activity="act"> </opt-card>
+      </div>
+    </div>
+  </div>
+</div>

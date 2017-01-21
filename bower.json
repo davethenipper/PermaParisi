@@ -1,0 +1,32 @@
+{
+  "name": "now-what",
+  "version": "0.0.1",
+  "homepage": "https://github.com/monotkate/whelmed-rutabaga",
+  "authors": [
+    "MoNotKate <mo.not.kate@gmail.com>",
+    "malarkey <mwwolters@gmail.com>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "endpoints",
+    "cloudsql"
+  ],
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "angular": "1.5.3",
+    "angular-animate": "1.5.3",
+    "angular-aria": "1.5.3",
+    "angular-material": "1.0.6",
+    "angular-messages": "1.5.3",
+    "angular-ui-router": "0.2.15",
+    "material-design-icons": "*",
+    "angular-cookies": "1.5.3",
+    "angular-google-gapi": "1.0.0"
+  }
+}
